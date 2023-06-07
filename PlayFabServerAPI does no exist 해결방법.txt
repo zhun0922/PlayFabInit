@@ -1,0 +1,15 @@
+Project settings -> Player -> Scripting Define Symbols에 
+다음 추가.
+
+ENABLE_PLAYFABSERVER_API
+
+
+If you've installed the PlayFab Editor Extension for Unity, you need to open it and enable the PlayFab Server API.
+
+If you are not using the Editor Extension or just want to enable the Server API manually, you can open your project's settings in Unity and go to the Player settings, then in the box for Scripting Define Symbols (I think it's in Other Settings), add this:
+
+ENABLE_PLAYFABSERVER_API
+If you have other defines in that box, make sure you separate it with a semi-colon. For example:
+
+MOBILE_INPUT;ENABLE_PLAYFABSERVER_API;CROSS_PLATFORM_INPUT
+It should look similar to this.
